@@ -76,7 +76,7 @@ int main(void)
 	for ( ; ; ) {
 		if () {   // 呼叫 isP 判斷
 			printf("%4d", );
-			cnt++;
+			// cnt 加 1
 			if () {   // 每 5 個換行
 				printf("\n");
 			}
