@@ -10,6 +10,12 @@
 //         3. 母音使用 switch，大小寫的 case 疊在一起共用
 //         4. 陣列要先歸零：int digit[10] = { 0 };
 //         輸出結果與下面的參考輸出相同即可。
+//   流程提示
+//      while 每讀一個字元，只會走下面三條路的其中一條
+//         (1) 是數字  -> digit[ch - '0'] 加 1       (用 if 判斷範圍)
+//         (2) 是母音  -> 對應的 vowel 加 1           (用 switch，大小寫疊在一起)
+//         (3) 其他字元 -> 什麼都不做                 (switch 沒有符合的 case 就會略過)
+//      最後兩個陣列各自用輸出的方式印出來
 // ---------------------------------------------------------------------------------------------
 //   以下的輸出為本題輸出參考
 //   輸入一段文字,以 # 結束:
@@ -28,19 +34,34 @@
 #include <stdlib.h>
 int main(void)
 {
-	// 宣告兩個 int 陣列 digit[10] 與 vowel[5]，起始值都是 0
-	// 宣告 int 變數 i，char 變數 ch
+	int digit[10] = { 0 };
+	int vowel[5] = { 0 };
+	int i;
+	char ch;
 
 	printf("輸入一段文字,以 # 結束:\n");
 	while () {   // 讀一個字元存進 ch，不是 # 才繼續
-		// 如果 ch 是數字字元，對應的 digit 次數加 1 (提示：ch - '0')
-		// 否則用 switch 判斷母音，大小寫的 case 疊在一起
-			// a 與 A 放在 vowel[0]，e 與 E 放在 vowel[1]，i 與 I 放在 vowel[2]，
-			// o 與 O 放在 vowel[3]，u 與 U 放在 vowel[4]
+		if () {   // ch 是數字字元
+			// 對應的 digit 次數加 1 (提示：ch - '0')
+		}
+		else {
+			switch (ch) {
+			case 'a': case 'A':
+				// vowel[0] 加 1
+				break;
+			case 'e': case 'E':
+				// vowel[1] 加 1
+				break;
+			// i、o、u 也是同樣的寫法，分別放在 vowel[2]、vowel[3]、vowel[4]
+			}
+		}
 	}
 
-	// 用 for 迴圈印出每個「有出現」的數字
-		printf("數字 %d 出現 %d 次\n", , );
+	for (i = 0; i < 10; i++) {
+		if () {   // 這個數字有出現過
+			printf("數字 %d 出現 %d 次\n", , );
+		}
+	}
 	printf("a:%d e:%d i:%d o:%d u:%d\n", , , , , );
 
 	system("pause"); return(0);
