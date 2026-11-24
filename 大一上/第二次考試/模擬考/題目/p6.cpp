@@ -51,7 +51,7 @@ int isP(int n)
 		if () {   // k 可以整除 n
 			return 0;
 		}
-		k++;
+		// k 往下一個
 	}
 	return 1;
 }
@@ -74,7 +74,7 @@ int main(void)
 				fac = fac + 2;
 			}
 		}
-		k++;
+		// k 往下一個
 	}
 	printf("\n共 %d 個因數\n", );
 
