@@ -64,16 +64,9 @@ int main(void)
 	// 需求一：k 從 1 開始，檢查到 k * k <= n
 	// 設定 k 的起始值
 	while () {
-		if () {   // k 可以整除 n
-			if () {   // k 等於 n / k，只算一個
-				printf("%4d ", );
-				fac = fac + 1;
-			}
-			else {   // 一次印一對
-				printf("%4d %4d ", , );
-				fac = fac + 2;
-			}
-		}
+		// 整除時：k 等於 n / k 只印一個，fac 加 1；否則印一對，fac 加 2
+			printf("%4d ", );
+			printf("%4d %4d ", , );
 		// k 往下一個
 	}
 	printf("\n共 %d 個因數\n", );

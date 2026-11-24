@@ -50,9 +50,7 @@ int main(void)
 	printf("輸入正整數 n: "); scanf("%d", &);
 	// 需求一
 	while () {   // n 大於 0
-		bits[cnt] = ;   // 存餘數
-		cnt++;
-		n = ;           // 往下除
+		// 把餘數存進 bits，cnt 加 1，n 往下除
 	}
 	printf("二進位: ");
 	for ( ; ; ) {   // 倒著印

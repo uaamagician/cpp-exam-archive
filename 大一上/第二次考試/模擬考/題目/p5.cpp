@@ -47,15 +47,8 @@ int main(void)
 			// 對應的 digit 次數加 1 (提示：ch - '0')
 		}
 		else {
-			switch (ch) {
-			case 'a': case 'A':
-				// vowel[0] 加 1
-				break;
-			case 'e': case 'E':
-				// vowel[1] 加 1
-				break;
-			// i、o、u 也是同樣的寫法，分別放在 vowel[2]、vowel[3]、vowel[4]
-			}
+			// 用 switch 判斷母音，大小寫的 case 疊在一起
+			// a e i o u 依序放在 vowel[0] 到 vowel[4]
 		}
 	}
 
