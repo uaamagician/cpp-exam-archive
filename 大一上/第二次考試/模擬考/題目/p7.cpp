@@ -48,7 +48,7 @@ int main(void)
 		len = ;   // 計算字串長度
 		if () {   // 長度大於 1 才處理
 			printf("反向: ");
-			for (i = ; i >= 0; i--) {   // 從最後一個字元倒著印
+			for ( ; ; ) {   // 從最後一個字元倒著印
 				putchar();
 			}
 			printf("\n");
@@ -65,7 +65,7 @@ int main(void)
 			}
 			else {
 				// 把 str[i] 到 str[j] 整段往前移到 str 的最前面
-				for (k = 0; k <= ; k++) {
+				for ( ; ; ) {
 					str[k] = ;
 				}
 				str[] = '\0';   // 補上新的結尾

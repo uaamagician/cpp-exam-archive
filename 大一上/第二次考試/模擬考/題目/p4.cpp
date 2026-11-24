@@ -46,7 +46,8 @@ int main(void)
 
 	tot = 0;
 	sign = 1;
-	for (i = 1; i <= n; i++) {
+	// 用 for 計算前 n 項 (i 從 1 到 n)
+	for ( ; ; ) {
 		// 把這一項加進 tot：正負號是 sign，分母是 2*i - 1 (分母要轉型成 float)
 		// sign 變號
 	}

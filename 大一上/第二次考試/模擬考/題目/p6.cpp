@@ -77,7 +77,7 @@ int main(void)
 
 	printf("輸入範圍 a b: "); scanf("%d %d", &, &);
 	// 需求二：用 for 從 a 到 b
-	for (i = a; i <= b; i++) {
+	for ( ; ; ) {
 		if () {   // 呼叫 isP 判斷
 			printf("%4d", );
 			cnt++;

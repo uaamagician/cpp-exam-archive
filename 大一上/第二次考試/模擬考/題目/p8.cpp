@@ -52,14 +52,14 @@ int main(void)
 		n = ;           // 往下除
 	}
 	printf("二進位: ");
-	for (i = ; i >= 0; i--) {   // 倒著印
+	for ( ; ; ) {   // 倒著印
 		printf("%d", );
 	}
 	printf("\n");
 
 	printf("輸入二進位字串: "); scanf("%s", );
 	// 需求二：檢查每個字元
-	for (i = 0; s[i] != '\0'; i++) {
+	for ( ; ; ) {
 		if () {   // 不是 '0' 也不是 '1'
 			flag = 0;
 		}
@@ -69,7 +69,8 @@ int main(void)
 		printf("不是二進位字串\n");
 	}
 	else {
-		for (i = 0; s[i] != '\0'; i++) {
+		// 用 for 由左到右算十進位
+		for ( ; ; ) {
 			v = ;   // 由左到右累加
 		}
 		printf("十進位: %d\n", );
