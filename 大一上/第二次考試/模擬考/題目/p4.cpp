@@ -16,6 +16,10 @@
 //   提示：第 i 項的分母是 2*i - 1，正負號每一項交替，可以用一個變數 sign 每次乘以 -1
 //         分母是 int，sign / (2*i - 1) 會變成整數除法，要把分母轉型成 (float)
 //         輸出結果與下面的參考輸出相同即可。
+//   變數要求
+//      int 變數 n、sign (正負號)，起始值自己設定
+//      float 變數 tot (級數和)、diff (差距)
+//      i 是項數的計數變數，請自己宣告
 //   流程提示 (n = 3 為例)
 //      i = 1 : sign = 1，加上 1 / 1   -> tot = 1，sign 變 -1
 //      i = 2 : sign = -1，加上 -1 / 3 -> tot = 0.6667，sign 變 1
@@ -36,16 +40,14 @@
 #include <stdlib.h>
 int main(void)
 {
-	int n, i, sign;
-	float tot, diff;
+	// 依照題目的「變數要求」宣告變數
 
 	// 需求一：輸入 n，不合法 (太小或太大) 就重新輸入
 	do {
 		printf("輸入 n(1~20): "); scanf("%d", &);
 	} while ();
 
-	tot = 0;
-	sign = 1;
+	// 設定 tot、sign 的起始值
 	// 用 for 計算前 n 項 (i 從 1 到 n)
 	for ( ; ; ) {
 		// 把這一項加進 tot：正負號是 sign，分母是 2*i - 1 (分母要轉型成 float)
@@ -54,10 +56,7 @@ int main(void)
 	printf("前 %d 項: %f\n", , );   // 記得乘 4
 
 	// 需求二
-	tot = 0;
-	sign = 1;
-	i = 0;
-	diff = 1;
+	// 重新設定 tot、sign、i、diff 的起始值
 	while () {   // 差距還沒小於 0.01 就繼續
 		// 1. i 往下一項
 		// 2. 加上第 i 項，sign 變號
